@@ -25,9 +25,3 @@ jobs:
       - name: Run Playwright tests with HTML reporter
         run: |
           npx playwright test --reporter=html
-
-      - name: Upload Playwright HTML report
-        uses: actions/upload-artifact@v3
-        with:
-          name: playwright-html-report
-          path: playwright-report
